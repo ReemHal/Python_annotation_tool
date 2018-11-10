@@ -21,14 +21,16 @@ annotation_file_or_dir is an optional argument that specifies the full path to t
 
 ## Annotation Instructions
 
-
 # The application window consists of:
-![Application window](https://github.com/ReemHal/Python_annotation_tool/edit/master/figures/tomato_cluster_190_segs.png)
+![Application Window](https://github.com/ReemHal/Python_annotation_tool/blob/master/figures/tomato_cluster_190_segs.png)
+
 1. The image given by the user in the command line (or the first image from the given directory)
 2. A clickable list of labels the user can use to annotate any segment in the image.
 3. A slider that allows the user to vary the number of superpixels to generate for the image. Note that changing this number will cause all previously selected segments for that label to be reset.
 
 # Steps to annotate an image
+![Application Window](https://github.com/ReemHal/Python_annotation_tool/blob/master/figures/tomato_annotated.png)
+
 1. Start by selecting the label you will be annotating the segments with from the list of labels to the left of the image.
 2. Move the slider to select the desired number of segments. IMPORTANT: if you change this value later for this label all the segments will be reset for this label.
 3. Left click on a segments to highlight the segment, right click on it to undo the highlighting.
