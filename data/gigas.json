@@ -1,0 +1,14 @@
+{
+  "labels": [
+    "background",
+    "leaf",
+    "stem",
+    "tomato"
+  ],
+  "imageURLs": [
+    "data/images/image_subset_full/plant_95_left.jpg"
+  ],
+  "annotationURLs": [
+    "data/annotations/plant_95_left.png"
+  ]
+}
