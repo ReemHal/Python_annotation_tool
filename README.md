@@ -1,14 +1,14 @@
-# GIGAS Annotation Tool Guide
+# MyPy Annotation Tool Guide
 
 ## Introduction
 
-The GIGAS annotation tool uses image processing techniques to divide a given image into segments. Users can then associate any subset of those areas to one or more labels from a predefined taxonomy.  The tool is designed to allow for efficient annotation of a large number of images using a combination of mouse clicks and keyboard presses. It also allows the user to annotated a single image or a sequence of images from a given directory. The annotations for each image are saved in a python dictionary pickle file that can be reloaded later by the tool to resume the annotation process.
+The MyPy annotation tool uses image processing techniques to divide a given image into segments. Users can then associate any subset of those areas to one or more labels from a predefined taxonomy.  The tool is designed to allow for efficient annotation of a large number of images using a combination of mouse clicks and keyboard presses. It also allows the user to annotated a single image or a sequence of images from a given directory. The annotations for each image are saved in a python dictionary pickle file that can be reloaded later by the tool to resume the annotation process.
 
 Currently, the tool only uses the SLIC (Simple Linear Iterative Clustering) approach to to divide the image into n superpixels, where n is the desired number of segments and is selected by the user as explained below.
 
 The tool is platform independent and uses Matplotlib library.
 
-## Executing the GIGAS Annotation Tool
+## Executing the MyPy Annotation Tool
 
 To run the program use the command:
 
@@ -22,12 +22,12 @@ annotation_file_or_dir is an optional argument that specifies the full path to t
 ## Annotation Instructions
 
 
-The application window consists of:
+# The application window consists of:
 1. The image given by the user in the command line (or the first image from the given directory)
 2. A clickable list of labels the user can use to annotate any segment in the image.
 3. A slider that allows the user to vary the number of superpixels to generate for the image. Note that changing this number will cause all previously selected segments for that label to be reset.
 
-Steps to annotate an image
+# Steps to annotate an image
 1. Start by selecting the label you will be annotating the segments with from the list of labels to the left of the image.
 2. Move the slider to select the desired number of segments. IMPORTANT: if you change this value later for this label all the segments will be reset for this label.
 3. Left click on a segments to highlight the segment, right click on it to undo the highlighting.
